@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		957B881A244753D70058C6C1 /* MapboxNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B8816244753D70058C6C1 /* MapboxNavigationView.swift */; };
-		957B881C244753D70058C6C1 /* MapboxNavigationWalkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 957B8818244753D70058C6C1 /* MapboxNavigationWalkingManager.m */; };
-		957B881D244753D70058C6C1 /* MapboxNavigationWalkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B8819244753D70058C6C1 /* MapboxNavigationWalkingManager.swift */; };
+		957B881C244753D70058C6C1 /* MapboxNavigationBicyclingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 957B8818244753D70058C6C1 /* MapboxNavigationBicyclingManager.m */; };
+		957B881D244753D70058C6C1 /* MapboxNavigationBicyclingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B8819244753D70058C6C1 /* MapboxNavigationBicyclingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,8 +28,8 @@
 		134814201AA4EA6300B7C361 /* libMapboxNavigation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMapboxNavigation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		957B8815244753D60058C6C1 /* MapboxNavigation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapboxNavigation-Bridging-Header.h"; sourceTree = "<group>"; };
 		957B8816244753D70058C6C1 /* MapboxNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxNavigationView.swift; sourceTree = "<group>"; };
-		957B8818244753D70058C6C1 /* MapboxNavigationWalkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapboxNavigationWalkingManager.m; sourceTree = "<group>"; };
-		957B8819244753D70058C6C1 /* MapboxNavigationWalkingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxNavigationWalkingManager.swift; sourceTree = "<group>"; };
+		957B8818244753D70058C6C1 /* MapboxNavigationBicyclingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapboxNavigationBicyclingManager.m; sourceTree = "<group>"; };
+		957B8819244753D70058C6C1 /* MapboxNavigationBicyclingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxNavigationBicyclingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				957B8818244753D70058C6C1 /* MapboxNavigationWalkingManager.m */,
-				957B8819244753D70058C6C1 /* MapboxNavigationWalkingManager.swift */,
+				957B8818244753D70058C6C1 /* MapboxNavigationBicyclingManager.m */,
+				957B8819244753D70058C6C1 /* MapboxNavigationBicyclingManager.swift */,
 				957B8816244753D70058C6C1 /* MapboxNavigationView.swift */,
 				957B8815244753D60058C6C1 /* MapboxNavigation-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
@@ -120,8 +120,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				957B881C244753D70058C6C1 /* MapboxNavigationWalkingManager.m in Sources */,
-				957B881D244753D70058C6C1 /* MapboxNavigationWalkingManager.swift in Sources */,
+				957B881C244753D70058C6C1 /* MapboxNavigationBicyclingManager.m in Sources */,
+				957B881D244753D70058C6C1 /* MapboxNavigationBicyclingManager.swift in Sources */,
 				957B881A244753D70058C6C1 /* MapboxNavigationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,3 +1,3 @@
 import { IMapboxNavigationProps } from './typings';
-declare const MapboxNavigationWalking: (props: IMapboxNavigationProps) => any;
-export default MapboxNavigationWalking;
+declare const MapboxNavigationBicycling: (props: IMapboxNavigationProps) => any;
+export default MapboxNavigationBicycling;

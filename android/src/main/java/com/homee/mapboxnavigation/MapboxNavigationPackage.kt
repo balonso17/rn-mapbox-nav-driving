@@ -13,7 +13,7 @@ class MapboxNavigationPackage : ReactPackage {
 
     override fun createViewManagers(reactContext: ReactApplicationContext): List<ViewManager<*, *>> {
         return Arrays.asList<ViewManager<*, *>>(
-                MapboxNavigationWalkingManager(reactContext)
+                MapboxNavigationBicyclingManager(reactContext)
         )
     }
 }
