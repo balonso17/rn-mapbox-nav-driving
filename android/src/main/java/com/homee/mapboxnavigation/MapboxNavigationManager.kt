@@ -12,7 +12,7 @@ import com.mapbox.maps.ResourceOptionsManager
 import com.mapbox.maps.TileStoreUsageMode
 import javax.annotation.Nonnull
 
-class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationContext) : SimpleViewManager<MapboxNavigationBicyclingView>() {
+class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationContext) : SimpleViewManager<MapboxNavigationView>() {
     private var accessToken: String? = null
 
     init {
@@ -32,14 +32,14 @@ class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationConte
     }
 
     override fun getName(): String {
-        return "MapboxNavigationBicycling"
+        return "MapboxNavigation"
     }
 
-    public override fun createViewInstance(@Nonnull reactContext: ThemedReactContext): MapboxNavigationBicyclingView {
-        return MapboxNavigationBicyclingView(reactContext, this.accessToken)
+    public override fun createViewInstance(@Nonnull reactContext: ThemedReactContext): MapboxNavigationView {
+        return MapboxNavigationView(reactContext, this.accessToken)
     }
 
-    override fun onDropViewInstance(view: MapboxNavigationBicyclingView) {
+    override fun onDropViewInstance(view: MapboxNavigationView) {
         view.onDropViewInstance()
         super.onDropViewInstance(view)
     }
@@ -55,7 +55,7 @@ class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationConte
     }
 
     @ReactProp(name = "origin")
-    fun setOrigin(view: MapboxNavigationBicyclingView, sources: ReadableArray?) {
+    fun setOrigin(view: MapboxNavigationView, sources: ReadableArray?) {
         if (sources == null) {
             view.setOrigin(null)
             return
@@ -64,7 +64,7 @@ class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationConte
     }
 
     @ReactProp(name = "destination")
-    fun setDestination(view: MapboxNavigationBicyclingView, sources: ReadableArray?) {
+    fun setDestination(view: MapboxNavigationView, sources: ReadableArray?) {
         if (sources == null) {
             view.setDestination(null)
             return
@@ -73,17 +73,17 @@ class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationConte
     }
 
     @ReactProp(name = "shouldSimulateRoute")
-    fun setShouldSimulateRoute(view: MapboxNavigationBicyclingView, shouldSimulateRoute: Boolean) {
+    fun setShouldSimulateRoute(view: MapboxNavigationView, shouldSimulateRoute: Boolean) {
         view.setShouldSimulateRoute(shouldSimulateRoute)
     }
 
     @ReactProp(name = "showsEndOfRouteFeedback")
-    fun setShowsEndOfRouteFeedback(view: MapboxNavigationBicyclingView, showsEndOfRouteFeedback: Boolean) {
+    fun setShowsEndOfRouteFeedback(view: MapboxNavigationView, showsEndOfRouteFeedback: Boolean) {
         view.setShowsEndOfRouteFeedback(showsEndOfRouteFeedback)
     }
 
     @ReactProp(name = "mute")
-    fun setMute(view: MapboxNavigationBicyclingView, mute: Boolean) {
+    fun setMute(view: MapboxNavigationView, mute: Boolean) {
         view.setMute(mute)
     }
 }

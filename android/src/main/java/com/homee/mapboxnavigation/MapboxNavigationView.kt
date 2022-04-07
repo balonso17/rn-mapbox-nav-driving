@@ -79,7 +79,7 @@ import com.mapbox.navigation.ui.voice.model.SpeechVolume
 import java.util.Locale
 import com.facebook.react.uimanager.events.RCTEventEmitter
 
-class MapboxNavigationBicyclingView(private val context: ThemedReactContext, private val accessToken: String?) :
+class MapboxNavigationView(private val context: ThemedReactContext, private val accessToken: String?) :
     FrameLayout(context.baseContext) {
 
     private companion object {
