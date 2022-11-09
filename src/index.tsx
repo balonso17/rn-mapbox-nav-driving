@@ -3,13 +3,13 @@ import { requireNativeComponent, StyleSheet } from 'react-native';
 
 import { IMapboxNavigationProps } from './typings';
 
-const MapboxNavigationBicycling = (props: IMapboxNavigationProps) => {
+const MapboxNavigationDriving = (props: IMapboxNavigationProps) => {
   return <RNMapboxNavigation style={styles.container} {...props} />;
 };
 
 const RNMapboxNavigation = requireNativeComponent(
-  'MapboxNavigationBicycling',
-  MapboxNavigationBicycling
+  'MapboxNavigationDriving',
+  MapboxNavigationDriving
 );
 
 const styles = StyleSheet.create({
@@ -18,4 +18,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MapboxNavigationBicycling;
+export default MapboxNavigationDriving;

@@ -1,4 +1,4 @@
-package com.homee.mapboxnavigationbicycling
+package com.homee.mapboxnavigationdriving
 
 import android.annotation.SuppressLint
 import android.content.res.Configuration
@@ -42,7 +42,7 @@ import com.mapbox.navigation.core.trip.session.LocationMatcherResult
 import com.mapbox.navigation.core.trip.session.LocationObserver
 import com.mapbox.navigation.core.trip.session.RouteProgressObserver
 import com.mapbox.navigation.core.trip.session.VoiceInstructionsObserver
-import com.homee.mapboxnavigationbicycling.databinding.NavigationViewBinding
+import com.homee.mapboxnavigationdriving.databinding.NavigationViewBinding
 import com.mapbox.api.directions.v5.DirectionsCriteria
 import com.mapbox.navigation.base.trip.model.RouteLegProgress
 import com.mapbox.navigation.base.trip.model.RouteProgress
@@ -79,7 +79,7 @@ import com.mapbox.navigation.ui.voice.model.SpeechVolume
 import java.util.Locale
 import com.facebook.react.uimanager.events.RCTEventEmitter
 
-class MapboxNavigationBicyclingView(private val context: ThemedReactContext, private val accessToken: String?) :
+class MapboxNavigationDrivingView(private val context: ThemedReactContext, private val accessToken: String?) :
     FrameLayout(context.baseContext) {
 
     private companion object {

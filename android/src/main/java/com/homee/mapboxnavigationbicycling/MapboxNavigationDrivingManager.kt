@@ -1,4 +1,4 @@
-package com.homee.mapboxnavigationbicycling
+package com.homee.mapboxnavigationdriving
 
 import android.content.pm.PackageManager
 import com.facebook.react.bridge.ReactApplicationContext
@@ -12,7 +12,7 @@ import com.mapbox.maps.ResourceOptionsManager
 import com.mapbox.maps.TileStoreUsageMode
 import javax.annotation.Nonnull
 
-class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationContext) : SimpleViewManager<MapboxNavigationBicyclingView>() {
+class MapboxNavigationDrivingManager(var mCallerContext: ReactApplicationContext) : SimpleViewManager<MapboxNavigationDrivingView>() {
     private var accessToken: String? = null
 
     init {
@@ -32,14 +32,14 @@ class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationConte
     }
 
     override fun getName(): String {
-        return "MapboxNavigationBicycling"
+        return "MapboxNavigationDriving"
     }
 
-    public override fun createViewInstance(@Nonnull reactContext: ThemedReactContext): MapboxNavigationBicyclingView {
-        return MapboxNavigationBicyclingView(reactContext, this.accessToken)
+    public override fun createViewInstance(@Nonnull reactContext: ThemedReactContext): MapboxNavigationDrivingView {
+        return MapboxNavigationDrivingView(reactContext, this.accessToken)
     }
 
-    override fun onDropViewInstance(view: MapboxNavigationBicyclingView) {
+    override fun onDropViewInstance(view: MapboxNavigationDrivingView) {
         view.onDropViewInstance()
         super.onDropViewInstance(view)
     }
@@ -55,7 +55,7 @@ class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationConte
     }
 
     @ReactProp(name = "origin")
-    fun setOrigin(view: MapboxNavigationBicyclingView, sources: ReadableArray?) {
+    fun setOrigin(view: MapboxNavigationDrivingView, sources: ReadableArray?) {
         if (sources == null) {
             view.setOrigin(null)
             return
@@ -64,7 +64,7 @@ class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationConte
     }
 
     @ReactProp(name = "destination")
-    fun setDestination(view: MapboxNavigationBicyclingView, sources: ReadableArray?) {
+    fun setDestination(view: MapboxNavigationDrivingView, sources: ReadableArray?) {
         if (sources == null) {
             view.setDestination(null)
             return
@@ -73,17 +73,17 @@ class MapboxNavigationBicyclingManager(var mCallerContext: ReactApplicationConte
     }
 
     @ReactProp(name = "shouldSimulateRoute")
-    fun setShouldSimulateRoute(view: MapboxNavigationBicyclingView, shouldSimulateRoute: Boolean) {
+    fun setShouldSimulateRoute(view: MapboxNavigationDrivingView, shouldSimulateRoute: Boolean) {
         view.setShouldSimulateRoute(shouldSimulateRoute)
     }
 
     @ReactProp(name = "showsEndOfRouteFeedback")
-    fun setShowsEndOfRouteFeedback(view: MapboxNavigationBicyclingView, showsEndOfRouteFeedback: Boolean) {
+    fun setShowsEndOfRouteFeedback(view: MapboxNavigationDrivingView, showsEndOfRouteFeedback: Boolean) {
         view.setShowsEndOfRouteFeedback(showsEndOfRouteFeedback)
     }
 
     @ReactProp(name = "mute")
-    fun setMute(view: MapboxNavigationBicyclingView, mute: Boolean) {
+    fun setMute(view: MapboxNavigationDrivingView, mute: Boolean) {
         view.setMute(mute)
     }
 }

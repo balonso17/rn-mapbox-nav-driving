@@ -1,5 +1,5 @@
 {
-  "name": "@balonso17/rn-mapbox-nav-bicycling",
+  "name": "@balonso17/rn-mapbox-nav-driving",
   "title": "React Native Mapbox Navigation",
   "version": "2.7.2",
   "description": "Smart Mapbox turn-by-turn routing based on real-time traffic for React Native.",
@@ -12,8 +12,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/balonso17/rn-mapbox-nav-bicycling",
-    "baseUrl": "https://github.com/balonso17/rn-mapbox-nav-bicycling"
+    "url": "git+https://github.com/balonso17/rn-mapbox-nav-driving",
+    "baseUrl": "https://github.com/balonso17/rn-mapbox-nav-driving"
   },
   "keywords": [
     "react-native",
